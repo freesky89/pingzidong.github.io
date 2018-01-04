@@ -304,6 +304,23 @@
 
 
 
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'pingzidong',
+            repo: 'pingzidong.github.io',
+            oauth: {
+                client_id: '2402f0ccd49942bc3b68',
+                client_secret: 'b985c5cbdad11121b2c65f7ce7d9e69cde7d6929',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
 
 
 
